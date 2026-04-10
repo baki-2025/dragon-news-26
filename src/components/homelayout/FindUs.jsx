@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const FindUs = () => {
     return (
@@ -9,7 +10,9 @@ const FindUs = () => {
                 <div className='join join-vertical w-full'>
     <button className='btn bg-base-100 justify-start join-item'><FaFacebook></FaFacebook> Facebook</button>
                 
-    <button className='btn bg-base-100 justify-start join-item'><FaTwitter></FaTwitter>Twitter</button>
+   <button className='btn bg-base-100 justify-start join-item'>
+  <FaXTwitter /> X
+</button>
                 
     <button className='btn bg-base-100 justify-start join-item'><FaInstagram></FaInstagram> Instagram</button>
 
