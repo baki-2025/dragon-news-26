@@ -15,10 +15,16 @@ const Navbar = () => {
     return (
         <div className='flex justify-between items-center bg-white/70 backdrop-blur-md shadow-sm border border-pink-50 rounded-2xl px-6 py-4'>
             <div className='font-medium text-pink-600 bg-pink-50 px-3 py-1 rounded-full text-sm'>{user && user.email}</div>
-            <div className='nav flex gap-8 text-gray-600 font-medium'>
+            <div className='nav flex flex-wrap gap-x-6 gap-y-2 text-gray-600 font-medium justify-center flex-1 mx-4'>
                 <NavLink to="/" className={({isActive}) => isActive ? "text-pink-600 font-bold border-b-2 border-pink-500 pb-1" : "hover:text-pink-500 transition-colors"}>Home</NavLink>
+                <NavLink to="/world" className={({isActive}) => isActive ? "text-pink-600 font-bold border-b-2 border-pink-500 pb-1" : "hover:text-pink-500 transition-colors"}>World</NavLink>
                 <NavLink to="/about" className={({isActive}) => isActive ? "text-pink-600 font-bold border-b-2 border-pink-500 pb-1" : "hover:text-pink-500 transition-colors"}>About</NavLink>
                 <NavLink to="/career" className={({isActive}) => isActive ? "text-pink-600 font-bold border-b-2 border-pink-500 pb-1" : "hover:text-pink-500 transition-colors"}>Career</NavLink>
+                <NavLink to="/opinion" className={({isActive}) => isActive ? "text-pink-600 font-bold border-b-2 border-pink-500 pb-1" : "hover:text-pink-500 transition-colors"}>Opinion</NavLink>
+                <NavLink to="/economy" className={({isActive}) => isActive ? "text-pink-600 font-bold border-b-2 border-pink-500 pb-1" : "hover:text-pink-500 transition-colors"}>Economy</NavLink>
+                <NavLink to="/business" className={({isActive}) => isActive ? "text-pink-600 font-bold border-b-2 border-pink-500 pb-1" : "hover:text-pink-500 transition-colors"}>Business</NavLink>
+                <NavLink to="/cricket" className={({isActive}) => isActive ? "text-pink-600 font-bold border-b-2 border-pink-500 pb-1" : "hover:text-pink-500 transition-colors"}>Cricket</NavLink>
+                <NavLink to="/recent" className={({isActive}) => isActive ? "text-pink-600 font-bold border-b-2 border-pink-500 pb-1" : "hover:text-pink-500 transition-colors"}>Recent</NavLink>
             </div>
             <div className='login flex items-center gap-4'>
                 {
